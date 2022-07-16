@@ -14,13 +14,6 @@ public class Hit : MonoBehaviour
             other.GetComponent<Rigidbody>().AddForce(Vector3.forward * _force);
         }
 
-        if (other.CompareTag("Enemy"))
-        {
-            other.GetComponent<Animator>().enabled = false;
-            other.GetComponent<Enemy>().enabled = false;
-            other.GetComponent<BoxCollider>().enabled = false;
-        }
-
         if (other.CompareTag("Skelet"))
         {
             Debug.Log("enemyHitted");

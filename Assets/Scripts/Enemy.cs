@@ -50,7 +50,7 @@ public class Enemy : MonoBehaviour
         if (other.CompareTag("Object") || other.CompareTag("Weapon") || other.CompareTag("Skelet"))
         {
             _script.enabled = false;
-            //_collider.enabled = false;
+            _collider.enabled = false;
             _animator.enabled = false;
             
         }

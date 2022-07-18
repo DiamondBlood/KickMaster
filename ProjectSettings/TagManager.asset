@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Skelet
   - Weapon
+  - LooseUI
   layers:
   - Default
   - TransparentFX
